@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.samanzamani.persiandate:PersianDate:0.8@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/PersianDate-0.8.aar/06e776c39c6a07b027929f41592b10f8/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/PersianDate-0.8.aar/06e776c39c6a07b027929f41592b10f8/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.samanzamani.persiandate/PersianDate/0.8/9d70157a2158890f0deca718f485a523ba7aa6b1/PersianDate-0.8-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
