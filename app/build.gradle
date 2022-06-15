@@ -58,4 +58,5 @@ dependencies {
     implementation 'org.greenrobot:greendao:3.2.2'
     implementation 'com.itextpdf:itextg:5.5.10'
     implementation 'com.github.samanzamani.persiandate:PersianDate:0.8'
+    implementation 'com.android.billingclient:billing:2.0.1'
 }

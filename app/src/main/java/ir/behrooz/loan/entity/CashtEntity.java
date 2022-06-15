@@ -25,6 +25,7 @@ public class CashtEntity {
     private boolean checkCashRemain;
     private boolean affectNext;
     private boolean notifyDayOfLoan;
+    private boolean isPremium;
 
     public CashtEntity(Context context) {
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(context);
@@ -50,13 +51,13 @@ public class CashtEntity {
             this.checkCashRemain = cashtEntity.getCheckCashRemain();
             this.affectNext = cashtEntity.getAffectNext();
             this.notifyDayOfLoan = cashtEntity.getNotifyDayOfLoan();
+            this.isPremium = cashtEntity.getIsPremium();
         }
     }
 
-    @Generated(hash = 1663509423)
-    public CashtEntity(Long id, String name, String currencyType,
-                       boolean withDeposit, boolean checkCashRemain, boolean affectNext,
-                       boolean notifyDayOfLoan) {
+    @Generated(hash = 1632784884)
+    public CashtEntity(Long id, String name, String currencyType, boolean withDeposit, boolean checkCashRemain,
+            boolean affectNext, boolean notifyDayOfLoan, boolean isPremium) {
         this.id = id;
         this.name = name;
         this.currencyType = currencyType;
@@ -64,6 +65,7 @@ public class CashtEntity {
         this.checkCashRemain = checkCashRemain;
         this.affectNext = affectNext;
         this.notifyDayOfLoan = notifyDayOfLoan;
+        this.isPremium = isPremium;
     }
 
     @Generated(hash = 2124985435)
@@ -124,5 +126,13 @@ public class CashtEntity {
 
     public void setNotifyDayOfLoan(boolean notifyDayOfLoan) {
         this.notifyDayOfLoan = notifyDayOfLoan;
+    }
+
+    public boolean getIsPremium() {
+        return this.isPremium;
+    }
+
+    public void setIsPremium(boolean isPremium) {
+        this.isPremium = isPremium;
     }
 }

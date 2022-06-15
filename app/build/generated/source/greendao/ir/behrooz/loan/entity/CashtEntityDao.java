@@ -29,6 +29,7 @@ public class CashtEntityDao extends AbstractDao<CashtEntity, Long> {
         public final static Property CheckCashRemain = new Property(4, boolean.class, "checkCashRemain", false, "CHECK_CASH_REMAIN");
         public final static Property AffectNext = new Property(5, boolean.class, "affectNext", false, "AFFECT_NEXT");
         public final static Property NotifyDayOfLoan = new Property(6, boolean.class, "notifyDayOfLoan", false, "NOTIFY_DAY_OF_LOAN");
+        public final static Property IsPremium = new Property(7, boolean.class, "isPremium", false, "IS_PREMIUM");
     }
 
 
@@ -50,7 +51,8 @@ public class CashtEntityDao extends AbstractDao<CashtEntity, Long> {
                 "\"WITH_DEPOSIT\" INTEGER NOT NULL ," + // 3: withDeposit
                 "\"CHECK_CASH_REMAIN\" INTEGER NOT NULL ," + // 4: checkCashRemain
                 "\"AFFECT_NEXT\" INTEGER NOT NULL ," + // 5: affectNext
-                "\"NOTIFY_DAY_OF_LOAN\" INTEGER NOT NULL );"); // 6: notifyDayOfLoan
+                "\"NOTIFY_DAY_OF_LOAN\" INTEGER NOT NULL ," + // 6: notifyDayOfLoan
+                "\"IS_PREMIUM\" INTEGER NOT NULL );"); // 7: isPremium
     }
 
     /** Drops the underlying database table. */
@@ -81,6 +83,7 @@ public class CashtEntityDao extends AbstractDao<CashtEntity, Long> {
         stmt.bindLong(5, entity.getCheckCashRemain() ? 1L: 0L);
         stmt.bindLong(6, entity.getAffectNext() ? 1L: 0L);
         stmt.bindLong(7, entity.getNotifyDayOfLoan() ? 1L: 0L);
+        stmt.bindLong(8, entity.getIsPremium() ? 1L: 0L);
     }
 
     @Override
@@ -105,6 +108,7 @@ public class CashtEntityDao extends AbstractDao<CashtEntity, Long> {
         stmt.bindLong(5, entity.getCheckCashRemain() ? 1L: 0L);
         stmt.bindLong(6, entity.getAffectNext() ? 1L: 0L);
         stmt.bindLong(7, entity.getNotifyDayOfLoan() ? 1L: 0L);
+        stmt.bindLong(8, entity.getIsPremium() ? 1L: 0L);
     }
 
     @Override
@@ -121,7 +125,8 @@ public class CashtEntityDao extends AbstractDao<CashtEntity, Long> {
             cursor.getShort(offset + 3) != 0, // withDeposit
             cursor.getShort(offset + 4) != 0, // checkCashRemain
             cursor.getShort(offset + 5) != 0, // affectNext
-            cursor.getShort(offset + 6) != 0 // notifyDayOfLoan
+            cursor.getShort(offset + 6) != 0, // notifyDayOfLoan
+            cursor.getShort(offset + 7) != 0 // isPremium
         );
         return entity;
     }
@@ -135,6 +140,7 @@ public class CashtEntityDao extends AbstractDao<CashtEntity, Long> {
         entity.setCheckCashRemain(cursor.getShort(offset + 4) != 0);
         entity.setAffectNext(cursor.getShort(offset + 5) != 0);
         entity.setNotifyDayOfLoan(cursor.getShort(offset + 6) != 0);
+        entity.setIsPremium(cursor.getShort(offset + 7) != 0);
      }
     
     @Override

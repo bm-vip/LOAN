@@ -135,8 +135,6 @@
     <string name="fullscreen_content">وام خانوادگی</string>
     <string name="title_activity_login">ورود کاربر</string>
     <string name="log_out">خروج کاربر</string>
-
-    <!-- Strings related to login -->
     <string name="prompt_mobile">شماره موبایل</string>
     <string name="prompt_activationCode">کد فعال سازی</string>
     <string name="action_sign_in">ورود</string>
@@ -149,8 +147,8 @@
     <string name="error_network">خطا در اتصال به شبکه اینترنت</string>
     <string name="error_invalid_img">لطفا تصویر را وارد کنید</string>
     <string name="error_cash_not_enouf">مانده صندوق کمتر از مبلغ وام می باشد</string>
-
     <string name="title_activity_cash_list">لیست صندوق ها</string>
+    <string name="please_purchase_it">برای ایجاد یک کاربر جدید، لطفا آن را خریداری کنید</string>
     <string name="title_activity_cash">تعریف صندوق</string>
     <string name="title_activity_person">ثبت افراد</string>
     <string name="title_activity_person_list">لیست افراد</string>
@@ -164,7 +162,6 @@
     <string name="title_activity_loan_list_help">راهنمای لیست وامها</string>
     <string name="title_activity_wallet_list_help">راهنمای لیست سپرده ها</string>
     <string name="title_activity_debit_credit_list_help">راهنمای لیست اقساط</string>
-
     <string name="personItemsAction">در لیست افراد برای مشاهده منوی عملیات آن را لمس کنید و چند لحظه نگه دارید. به عنوان مثال ارسال گزارش متنی از عملکرد آن فرد از طریق همین منو قابل انجام است.</string>
     <string name="loanItemsAction">در لیست وام ها برای مشاهده منوی عملیات آن را لمس کنید و چند لحظه نگه دارید. به عنوان مثال نمایش لیست اقساط وام مورد نظر از طریق همین منو قابل انجام است.</string>
     <string name="searchAction1">در هر لیست برای جستجو، دکمه </string>

@@ -13,6 +13,14 @@
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="com.farsitel.bazaar.permission.PAY_THROUGH_BAZAAR" />
+    <!--<queries>-->
+        <!--<package android:name="com.farsitel.bazaar" />-->
+        <!--<intent>-->
+            <!--<action android:name="ir.cafebazaar.pardakht.InAppBillingService.BIND" />-->
+            <!--<data android:mimeType="*/*" />-->
+        <!--</intent>-->
+    <!--</queries>-->
 
     <application
         android:allowBackup="true"
@@ -22,7 +30,15 @@
         android:largeHeap="true"
         android:supportsRtl="true"
         android:theme="@style/AppBaseTheme">
-
+        <!--<receiver android:name=".util.IABReceiver">-->
+        <!--<intent-filter>-->
+        <!--<action android:name="com.farsitel.bazaar.ping"/>-->
+        <!--<action android:name="com.farsitel.bazaar.purchase"/>-->
+        <!--<action android:name="com.farsitel.bazaar.billingSupport"/>-->
+        <!--<action android:name="com.farsitel.bazaar.consume"/>-->
+        <!--<action android:name="com.farsitel.bazaar.getPurchase"/>-->
+        <!--</intent-filter>-->
+        <!--</receiver>-->
         <provider
             android:name="android.support.v4.content.FileProvider"
             android:authorities="${applicationId}.provider"
